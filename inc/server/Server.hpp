@@ -76,7 +76,7 @@ class Server
 		void															setEpoll(int option);
 		void															listenConnexionsEpoll(void);
 		bool															handleRequest(Client& client);
-		bool															addNewClient(int n);
+		bool															addNewClient();
 		bool															ft_epollin(Client* client, int n);
 		bool															ft_epollout(Client* client, int n);
 
